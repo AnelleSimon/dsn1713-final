@@ -1,0 +1,121 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+// Include any default variable overrides here (though functions won't be available)
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Quicksand:wght@300..700&display=swap');
+/* Variables */
+$font-family-sans-serif: 'Quicksand', sans-serif;
+$font-family-serif: 'Libre Baskerville', serif;
+$primary: #34BCAE;
+$secondary: #067873;
+$light-color: #f8f9fa;
+$text-color: #033f47;
+$success: #28a745;
+// $btn-primary: #34BCAE;
+
+/* General */
+body {
+    font-family: $font-family-sans-serif;
+    line-height: 1.6;
+}
+
+// nav img {
+//     width: 100px;
+// }
+
+/* Header */
+header {
+    font-family: $font-family-sans-serif;
+    background-color: $light-color;
+    border-bottom: 1px solid darken($light-color, 10%);
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Add additional custom code here
+
+.top-bar {
+    background-color: #34BCAE;
+    padding: 0.5rem 0;
+
+    .top-bar-text {
+        margin: 0;
+        color: white;
+        font-size: 0.9rem;
+        font-weight: bold;
+        letter-spacing: 0.05rem;
+    }
+}
+.nav-item {
+    font-weight: 500;
+}
+.btn-rounded {
+    border-radius: 50px;
+}
+.btn {
+    font-weight: 600;
+}
+/* Hero Section */
+.hero {
+    background: $primary;
+    color: rgb(17, 33, 82);
+}
+
+.hero h1 {
+    // font-family: $font-family-serif;
+    font-size: 2.5rem;
+}
+.lead {
+    color: #033f47;
+}
+/* Services Section */
+.services h2 {
+    
+    color: $secondary;
+}
+
+// .services .btn-success {
+//     background-color: $btn-success;
+//     border: none;
+// }
+
+
+
+
+/* About Section */
+.about {
+    background: $secondary;
+    color: white;
+}
+
+.about p {
+    font-size: 1rem;
+}
+
+.social-icons {
+    font-size: 1.5rem; 
+    a {
+        transition: color 0.3s ease;
+        &:hover {
+            color: #007bff; 
+        }
+    }
+}
+.footer-container {
+    max-width: 1028px; 
+    margin: 0 auto; 
+    padding: 0 15px;
+}
+.footer-link {
+    color: #033f47;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+/* Footer */
+footer {
+    border-top: 1px solid darken($light-color, 10%);
+}
+li {
+    list-style: none;
+}
